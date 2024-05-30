@@ -486,16 +486,16 @@ html.lenis {
     width: 100%;
     display: flex;
     /* background-color: #ccc; */
-    gap: 0%;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10vw;
   }
   
   .bottom-right, .bottom-left {
     width: 100%;
     display: flex;
     /* background-color: #ccc; */
-    gap: 0%;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10vw;
   }
 
   /* TEXTS */
