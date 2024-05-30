@@ -152,7 +152,7 @@ body,
   transform: translate(-50%, -50%);
   padding: 5% 5%;
   width: 70vw;
-  height: 70vh;
+  height: fit-content;
   background-color: #fefeff50;
   backdrop-filter: blur(16px);
   border: 1px solid #fefeff;
@@ -234,8 +234,9 @@ body,
 
 .about-portrait {
   width: 40%;
-  height: 100%;
+  height: 42.5vh;
   border-radius: 50px;
+  background-color: #007FFF;
   overflow: hidden; /* To hide overflowing content */
 }
 
@@ -280,12 +281,31 @@ body,
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .top-images, .bottom-images {
   display: flex;
-  justify-content: space-evenly;
+  width: fit-content;
+  gap: 5vw;
+  /* background-color: #007FFF; */
 }
+
+.top-right, .top-left {
+  width: fit-content;
+  display: flex;
+  /* background-color: #ccc; */
+  gap: 5vw;
+}
+
+.bottom-right, .bottom-left {
+  width: fit-content;
+  display: flex;
+  /* background-color: #ccc; */
+  gap: 5vw;
+}
+
+
 
 .seen-in-image {
   width: 8vw;
@@ -311,7 +331,7 @@ body,
 }
 
 .resource-icon-box {
-  height: 15vh;
+  height: 20vh;
   width: 25%;
   background-color: #fefeff;
   border-radius: 25px;
@@ -320,6 +340,7 @@ body,
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in;
+  cursor: pointer;
 }
 
 .resource-icon-box:hover {
@@ -341,7 +362,7 @@ body,
 }
 
 .contact-icon-box {
-  height: 15vh;
+  height: 20vh;
   width: 25%;
   background-color: #fefeff;
   border-radius: 25px;
@@ -350,6 +371,7 @@ body,
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in;
+  cursor: pointer;
 }
 
 .contact-icon-box:hover {
@@ -451,6 +473,29 @@ html.lenis {
 
   .seen-in-image {
     width: 20vw;
+  }
+
+  .top-images, .bottom-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #007FFF; */
+  }
+  
+  .top-right, .top-left {
+    width: 100%;
+    display: flex;
+    /* background-color: #ccc; */
+    gap: 0%;
+    justify-content: space-evenly;
+  }
+  
+  .bottom-right, .bottom-left {
+    width: 100%;
+    display: flex;
+    /* background-color: #ccc; */
+    gap: 0%;
+    justify-content: space-evenly;
   }
 
   /* TEXTS */

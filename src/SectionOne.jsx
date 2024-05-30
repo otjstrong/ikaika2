@@ -71,8 +71,8 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                         </div>
                         <div className="about-portrait" >
                             <div className="image-wrapper">
-                                <img src="/oli.jpg" alt="" />
-                                <img src="/oli.jpg" alt="" />
+                                <img src="/new1.PNG" alt="" />
+                                <img src="/new2.PNG" alt="" />
                             </div>
                         </div>
                     </div>
@@ -134,14 +134,25 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                         <h1 className="overlay-description black" >I’m passionate about supporting emerging and dynamic businesses with operational, financial, and strategic support. I’m particularly excited to work with innovative founders building companies reimagining digital lifestyle. Over the years I’ve worked with global companies, particularly across the US and Europe, both in Web2 and Web3, B2B and B2C. I’ve also invested alongside funds such as:</h1>
                         <div className="seen-in-images" >
                             <div className="top-images">
-                                <img className="seen-in-image" src="./i13.png" />
-                                <img className="seen-in-image" src="./i12.png" />
-                                <img className="seen-in-image" src="./i11.png" />
+                                <div className="top-left" >
+                                    <img className="seen-in-image" src="./i13.png" />
+                                    <img className="seen-in-image" src="./i12.png" />
+                                </div>
+                                <div className="top-right" >
+                                    <img className="seen-in-image" src="./i11.png" />
+                                    <img className="seen-in-image" src="./i14.png" />
+                                </div>
                             </div>
                             <div className="bottom-images">
-                                <img className="seen-in-image" src="./i10.png" />
-                                <img className="seen-in-image" src="./i9.png" />
-                                <img className="seen-in-image" src="./i8.png" />
+                                <div className="bottom-left">
+                                    <img className="seen-in-image" src="./i10.png" />
+                                    <img className="seen-in-image" src="./i9.png" />
+                                </div>
+                                <div className="bottom-right">
+                                    <img className="seen-in-image" src="./i8.png" />
+                                    <img className="seen-in-image" src="./i15.png" />
+                                    <img className="seen-in-image" src="./i16.png" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -240,22 +251,8 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                                 <h1 className="overlay-small-description black" >Twitter</h1>
                             </div>
                             <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
-                                <i class="fa-brands fa-instagram"></i>
-                                <h1 className="overlay-small-description black" >Instagram</h1>
-                            </div>
-                        </div>
-                        <div className="row" >
-                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" > 
-                                <i class="fa-brands fa-youtube"></i>
-                                <h1 className="overlay-small-description black" >YouTube</h1>
-                            </div>
-                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
                                 <i class="fa-solid fa-envelope"></i>
                                 <h1 className="overlay-small-description black" >Email</h1>
-                            </div>
-                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
-                                <i class="fa-brands fa-facebook"></i>
-                                <h1 className="overlay-small-description black" >Facebook</h1>
                             </div>
                         </div>
                     </div>
