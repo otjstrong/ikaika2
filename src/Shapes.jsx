@@ -81,29 +81,11 @@ export default function Shapes({ showOverlayOne, setShowOverlayOne, showOverlayT
         </Float>
       </group>
 
-      <group position={[-1.5, -1.15, 0]}>
-        <Float speed={ 2 } rotationIntensity={ 1.5 } >
-          <mesh onClick={overlayTwo} scale={ 0.2 } position={[0, 0.15, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "THOUGHTS")} onPointerLeave={handleMouseLeave}>
-            <coneGeometry args={[5, 7.5, 10]} />
-            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
-          </mesh>
-        </Float>
-      </group>
-
       <group position={[0, 1.15, 0]}>
         <Float speed={ 2 } rotationIntensity={ 1.5 } >
           <mesh onClick={overlayThree} scale={ 0.2 } position={[0, 0, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "STARTUPS")} onPointerLeave={handleMouseLeave}>
             <torusGeometry args={[3, 1.5, 16, 100]} />
             <MeshTransmissionMaterial transmissionSampler={ true } color={ "#8DC0FF" } thickness={2} />
-          </mesh>
-        </Float>
-      </group>
-
-      <group position={[1.5, -1.15, 0]}>
-        <Float speed={ 2 } rotationIntensity={ 1.5 } >
-          <mesh onClick={overlaySix} scale={ 0.2 } position={[0, 0, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "CONTACT")} onPointerLeave={handleMouseLeave}>
-            <torusKnotGeometry args={[3, 1, 100, 16]} />
-            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
           </mesh>
         </Float>
       </group>
@@ -117,14 +99,32 @@ export default function Shapes({ showOverlayOne, setShowOverlayOne, showOverlayT
         </Float>
       </group>
 
-      {/* <group position={[2.5, -1.15, 0]}>
+      <group position={[-2.5, -1.15, 0]}>
         <Float speed={ 2 } rotationIntensity={ 1.5 } >
-          <mesh onClick={overlaySix} scale={ 0.2 } position={[0, 0, 0]} rotation={ [ 0, 0, Math.PI * 1 ] } onPointerEnter={(e) => handleMouseEnter(e.object, "CONTACTS")} onPointerLeave={handleMouseLeave}>
+          <mesh onClick={overlayTwo} scale={ 2 } position={[0, 0.15, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "THOUGHTS")} onPointerLeave={handleMouseLeave}>
+            <sphereGeometry args={[0.5, 22, 50]} />
+            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
+          </mesh>
+        </Float>
+      </group>
+
+      <group position={[0, -1.15, 0]}>
+        <Float speed={ 2 } rotationIntensity={ 1.5 } >
+          <mesh onClick={overlayFive} scale={ 0.2 } position={[0, 0, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "INVESTING")} onPointerLeave={handleMouseLeave}>
+            <torusKnotGeometry args={[3, 1, 100, 16]} />
+            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
+          </mesh>
+        </Float>
+      </group>
+
+      <group position={[2.5, -1.15, 0]}>
+        <Float speed={ 2 } rotationIntensity={ 1.5 } >
+          <mesh onClick={overlaySix} scale={ 0.2 } position={[0, 0, 0]} rotation={ [ 0, 0, Math.PI * 1 ] } onPointerEnter={(e) => handleMouseEnter(e.object, "CONTACT")} onPointerLeave={handleMouseLeave}>
             <coneGeometry args={[5, 7.5, 10]} />
             <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
           </mesh>
         </Float>
-      </group> */}
+      </group>
     </>
   );
 }

@@ -32,13 +32,35 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
         window.open(linkUrl, '_blank');
       };
 
+      const closeAllOverlays = () => {
+        setShowOverlayOne(false);
+        setShowOverlayTwo(false);
+        setShowOverlayThree(false);
+        setShowOverlayFour(false);
+        setShowOverlayFive(false);
+        setShowOverlaySix(false);
+    };
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                closeAllOverlays();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
+
     return (
         <section className="section one">
             <div className="navigation">
                 <div className="navigation-left" >
                   <h1 className="description black navigation-text" >Ikaika</h1>
                 </div>
-                <div className="navigation-right" />
+                <div className="navigation-right" onClick={closeAllOverlays} />
             </div>
 
             <CSSTransition
@@ -183,13 +205,26 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
             >
                 <div className={`overlay-div ${showOverlayFive ? "active" : ""}`}>
                     <div className="overlay-navigation" >
-                        <h1 className="overlay-navigation-text" >Startup Playground</h1>
+                        <h1 className="overlay-navigation-text" >Investing</h1>
                         <button className="overlay-close-button" onClick={closeOverlayFive}>
                             <i class="fa-solid fa-x"></i>
                         </button>
                     </div>
-                    <div className="about-content" >
-                        <h1 className="overlay-description black" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor. Diam vel quam elementum pulvinar etiam non quam lacus. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Amet mauris commodo quis imperdiet massa tincidunt nunc. Id donec ultrices tincidunt arcu. Commodo elit at imperdiet dui. Lacus luctus accumsan tortor posuere ac ut consequat. Aenean euismod elementum nisi quis eleifend quam. Nulla malesuada pellentesque elit eget. Nisi est sit amet facilisis magna etiam tempor orci. Tellus in metus vulputate eu. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. A condimentum vitae sapien pellentesque. Accumsan tortor posuere ac ut consequat. Consectetur adipiscing elit duis tristique.</h1>
+                    <div className="contact-content" >
+                        <div className="row" >
+                            <div onClick={() => handleClick('https://x.com/home')} className="contact-icon-box" >
+                                <i class="fa-brands fa-linkedin"></i>
+                                <h1 className="overlay-small-description black" >Button</h1>
+                            </div>
+                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
+                                <i class="fa-brands fa-twitter"></i>
+                                <h1 className="overlay-small-description black" >Button</h1>
+                            </div>
+                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
+                                <i class="fa-solid fa-envelope"></i>
+                                <h1 className="overlay-small-description black" >Button</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </CSSTransition>

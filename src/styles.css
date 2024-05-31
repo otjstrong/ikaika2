@@ -224,8 +224,8 @@ body,
 }
 
 .about-portrait {
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
   background-size: cover; 
   background-position: top; 
@@ -302,6 +302,7 @@ body,
   flex-direction: row;
   flex-wrap: wrap; /* Added */
   gap: 5vw;
+  row-gap: 2vh;
   align-items: center;
   justify-content: center;
   width: 50%;
