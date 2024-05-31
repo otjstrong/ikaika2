@@ -57,24 +57,8 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                     <div className="about-content" >
                         <div className="about-content-text" >
                             <h1 className="overlay-description black" >Hello! I’m Oli from London. An LSE alum with a background in Philosophy and Economics, I cut my teeth in startups both as a founder and operator. I later delved into behavioural finance at an award winning global equity fund and then onto venture capital as an early stage investor. Most recently I’ve been working with innovative technology companies as they scale. I love slick UI, both personally and professionally, and am passionate about promoting innovation and improving efficiency. Outside of work, I'm happiest on the water, enjoying good food, and staying active — usually with my dog by my side. </h1>
-                            <div>
-                                <h1 className="overlay-description black" >I've had the privilege of joining industry leaders in discussion, sharing my insights at conferences, on podcasts and in media interviews. Including:</h1>
-                                <div className="about-images" >
-                                    <img className="about-image" src="./i2.png" />
-                                    <img className="about-image"  src="./i3.png" />
-                                    <img className="about-image"  src="./i4.png" />
-                                    <img className="about-image"  src="./i5.png" />
-                                    <img className="about-image"  src="./i6.png" />
-                                    <img className="about-image"  src="./i7.png" />
-                                </div>
-                            </div>
                         </div>
-                        <div className="about-portrait" >
-                            <div className="image-wrapper">
-                                <img src="/new1.PNG" alt="" />
-                                <img src="/new2.PNG" alt="" />
-                            </div>
-                        </div>
+                        <div className="about-portrait" />
                     </div>
                 </div>
             </CSSTransition>
@@ -87,30 +71,25 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
             >
                 <div className={`overlay-div ${showOverlayTwo ? "active" : ""}`}>
                     <div className="overlay-navigation" >
-                        <h1 className="overlay-navigation-text" >As seen in/at</h1>
+                        <h1 className="overlay-navigation-text" >Thoughts</h1>
                         <button className="overlay-close-button" onClick={closeOverlayTwo}>
                             <i class="fa-solid fa-x"></i>
                         </button>
                     </div>
                     <div className="seen-in-content" >
                         <h1 className="overlay-description black" >I've had the privilege of joining industry leaders in discussion, sharing my insights at conferences, on podcasts and in media interviews. Including:</h1>
-                        <div className="logos">
-                            <div className="logos-slide">
-                                <img src="./i2.png" />
-                                <img src="./i3.png" />
-                                <img src="./i4.png" />
-                                <img src="./i5.png" />
-                                <img src="./i6.png" />
-                                <img src="./i7.png" />
+                        <div className="seen-in-row" >
+                            <div className="about-images" >
+                                <img className="about-image" src="./i2.png" />
+                                <img className="about-image"  src="./i3.png" />
+                                <img className="about-image"  src="./i4.png" />
+                                <img className="about-image"  src="./i5.png" />
+                                <img className="about-image"  src="./i6.png" />
+                                <img className="about-image"  src="./i7.png" />
                             </div>
-
-                            <div className="logos-slide">
-                                <img src="./i2.png" />
-                                <img src="./i3.png" />
-                                <img src="./i4.png" />
-                                <img src="./i5.png" />
-                                <img src="./i6.png" />
-                                <img src="./i7.png" />
+                            <div className="thoughts-images" >
+                                <img className="thought-image" src="./new1.PNG" />
+                                <img className="thought-image"  src="./new2.PNG" />
                             </div>
                         </div>
                     </div>
@@ -125,7 +104,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
             >
                 <div className={`overlay-div ${showOverlayThree ? "active" : ""}`}>
                     <div className="overlay-navigation" >
-                        <h1 className="overlay-navigation-text" >Investment and advisory</h1>
+                        <h1 className="overlay-navigation-text" >StartUps</h1>
                         <button className="overlay-close-button" onClick={closeOverlayThree}>
                             <i class="fa-solid fa-x"></i>
                         </button>
@@ -175,7 +154,6 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                     <div className="resource-content" >
                         <h1 className="overlay-description black" >Some of my favourite reads, listens and references</h1>
                         <div className="resource-icons" >
-                            <div className="row" >
                                 <div className="resource-icon-box" >
                                     <i class="fa-solid fa-book"></i>
                                     <h1 className="overlay-small-description black" >Books</h1>
@@ -188,21 +166,10 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                                     <i class="fa-solid fa-handshake"></i>
                                     <h1 className="overlay-small-description black" >Fundraising</h1>
                                 </div>
-                            </div>
-                            <div className="row" >
                                 <div className="resource-icon-box" >
                                     <i class="fa-solid fa-gears"></i>
                                     <h1 className="overlay-small-description black" >Operating</h1>
                                 </div>
-                                <div className="resource-icon-box" >
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <h1 className="overlay-small-description black" >References</h1>
-                                </div>
-                                <div className="resource-icon-box" >
-                                    <i class="fa-solid fa-puzzle-piece"></i>
-                                    <h1 className="overlay-small-description black" >Other</h1>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

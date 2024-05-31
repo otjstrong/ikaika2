@@ -223,21 +223,13 @@ body,
   text-align: justify;
 }
 
-.about-images {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.about-image {
-  width: 4vw;
-}
-
 .about-portrait {
-  width: 40%;
-  height: 42.5vh;
-  border-radius: 50px;
-  background-color: #007FFF;
-  overflow: hidden; /* To hide overflowing content */
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-size: cover; 
+  background-position: top; 
+  background-image: url('/oli.jpg'); 
 }
 
 .image-wrapper {
@@ -305,6 +297,39 @@ body,
   gap: 5vw;
 }
 
+.about-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Added */
+  gap: 5vw;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.seen-in-row {
+  display: flex;
+}
+
+.about-image {
+  width: 6vw;
+}
+
+.thoughts-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.thought-image {
+  width: 10vw;
+  position: relative;
+}
+
+
 
 
 .seen-in-image {
@@ -325,14 +350,15 @@ body,
   width: 100%;
   height: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap; /* Added */
   justify-content: space-between;
   gap: 2.5vh;
 }
 
 .resource-icon-box {
-  height: 20vh;
-  width: 25%;
+  height: 12.5vw;
+  width: 12.5vw;
   background-color: #fefeff;
   border-radius: 25px;
   display: flex;
@@ -362,8 +388,8 @@ body,
 }
 
 .contact-icon-box {
-  height: 20vh;
-  width: 25%;
+  height: 12.5vw;
+  width: 12.5vw;
   background-color: #fefeff;
   border-radius: 25px;
   display: flex;
@@ -466,6 +492,21 @@ html.lenis {
 
 
 @media (max-width: 768px) {
+
+  .thoughts-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vh;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .thought-image {
+    width: 15vw;
+    position: relative;
+  }
 
   .about-image {
     width: 10vw;
@@ -594,9 +635,13 @@ html.lenis {
 }
 
 .about-portrait {
-  width: 100%;
-  height: 30vh;
-  border-radius: 25px;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-size: cover; 
+  background-position: top; 
+  background-image: url('/oli.jpg'); 
+  align-self: center;
 }
 
 /* OVERLAY AS SEEN IN */
@@ -637,8 +682,9 @@ html.lenis {
   width: 100%;
   height: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; /* Added */
+  justify-content: space-evenly;
   gap: 2.5vh;
 }
 
