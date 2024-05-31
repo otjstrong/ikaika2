@@ -58,7 +58,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
         <section className="section one">
             <div className="navigation">
                 <div className="navigation-left" >
-                  <h1 className="description black navigation-text" >Ikaika</h1>
+                  <h1 className="description black navigation-text" onClick={closeAllOverlays} >Ikaika</h1>
                 </div>
                 <div className="navigation-right" onClick={closeAllOverlays} />
             </div>

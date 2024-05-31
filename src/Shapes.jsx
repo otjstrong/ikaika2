@@ -85,7 +85,7 @@ export default function Shapes({ showOverlayOne, setShowOverlayOne, showOverlayT
         <Float speed={ 2 } rotationIntensity={ 1.5 } >
           <mesh onClick={overlayThree} scale={ 0.2 } position={[0, 0, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "STARTUPS")} onPointerLeave={handleMouseLeave}>
             <torusGeometry args={[3, 1.5, 16, 100]} />
-            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#8DC0FF" } thickness={2} />
+            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
           </mesh>
         </Float>
       </group>
@@ -112,7 +112,7 @@ export default function Shapes({ showOverlayOne, setShowOverlayOne, showOverlayT
         <Float speed={ 2 } rotationIntensity={ 1.5 } >
           <mesh onClick={overlayFive} scale={ 0.2 } position={[0, 0, 0]} onPointerEnter={(e) => handleMouseEnter(e.object, "INVESTING")} onPointerLeave={handleMouseLeave}>
             <torusKnotGeometry args={[3, 1, 100, 16]} />
-            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#007FFF" } thickness={2} />
+            <MeshTransmissionMaterial transmissionSampler={ true } color={ "#8DC0FF" } thickness={2} />
           </mesh>
         </Float>
       </group>
