@@ -217,7 +217,7 @@ body,
   display: flex;
   height: 100%;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .about-content-text {
