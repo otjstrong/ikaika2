@@ -244,15 +244,15 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                     </div>
                     <div className="contact-content" >
                         <div className="row" >
-                            <div onClick={() => handleClick('https://x.com/home')} className="contact-icon-box" >
+                            <div onClick={() => handleClick('https://www.linkedin.com/in/otjstrong/')} className="contact-icon-box" >
                                 <i class="fa-brands fa-linkedin"></i>
                                 <h1 className="overlay-small-description black" >LinkedIn</h1>
                             </div>
-                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
+                            <div onClick={() => handleClick('https://twitter.com/_olistrong')}  className="contact-icon-box" >
                                 <i class="fa-brands fa-twitter"></i>
                                 <h1 className="overlay-small-description black" >Twitter</h1>
                             </div>
-                            <div onClick={() => handleClick('https://x.com/home')}  className="contact-icon-box" >
+                            <div onClick={() => handleClick('mail:oli@ikaika.co.uk')}  className="contact-icon-box" >
                                 <i class="fa-solid fa-envelope"></i>
                                 <h1 className="overlay-small-description black" >Email</h1>
                             </div>
