@@ -18,7 +18,11 @@ body,
 ::-webkit-scrollbar {
   display: none;
 }
+#mine{
 
+text-align: center;
+
+}
 .section {
   width: 100%;
   height: 100vh;
