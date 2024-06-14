@@ -218,7 +218,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                         <div className="row" >
                             <div onClick={() => handleClick('https://airtable.com/app3wNbep8xWKHBSr/shr7L61SHYf1kYkxC/tbldr9tjcxieLKBet')} className="contact-icon-box" >
                                 <i class="fa-solid fa-dollar-sign"></i>
-                                <h1 className="overlay-small-description black" >Investor List</h1>
+                                <h1 className="overlay-small-description black" >Investor Lists</h1>
                             </div>
                             <div onClick={() => handleClick('https://airtable.com/appQtoGSjuRZ8VdgA/shrAdCoNWMgN7KHVb/tblhKnDJ1yw5njh10')}  className="contact-icon-box" >
                                 <i class="fa-solid fa-hammer"></i>
@@ -226,7 +226,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                             </div>
                             <div onClick={() => handleClick('https://airtable.com/app0dZlrRhHPLaJmL/shrCfGVTBY7iewrCk/tblaGg70js1xt3Yt3')}  className="contact-icon-box" >
                                 <i class="fa-solid fa-bullhorn"></i>
-                                <h1 className="overlay-small-description black" >Other Fundraising <br></br> Tips and Tricks</h1>
+                                <h1 style="text-align: center;" className="overlay-small-description black" >Other Fundraising <br></br> <style></style>Tips and Tricks</h1>
                             </div>
                         </div>
                     </div>
