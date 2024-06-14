@@ -263,6 +263,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                 </div>
             </CSSTransition>
 
+
         </section>
     )
 }
