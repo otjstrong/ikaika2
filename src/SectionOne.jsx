@@ -55,7 +55,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
         };
     }, []);
 
-    
+
     return (
         <section className="section one">
             <div className="navigation">
@@ -232,6 +232,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                     </div>
                 </div>
             </CSSTransition>
+
 
             <CSSTransition
                 in={ showOverlaySix }
