@@ -226,7 +226,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                             </div>
                             <div onClick={() => handleClick('https://airtable.com/app0dZlrRhHPLaJmL/shrCfGVTBY7iewrCk/tblaGg70js1xt3Yt3')}  className="contact-icon-box" >
                                 <i class="fa-solid fa-bullhorn"></i>
-                                <h1 className="overlay-small-description black" >Other Fundraising Tips and Tricks</h1>
+                                <h1 className="overlay-small-description black" >Other Fundraising <br></br> Tips and Tricks</h1>
                             </div>
                         </div>
                     </div>
