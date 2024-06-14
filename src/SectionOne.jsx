@@ -41,6 +41,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
         setShowOverlaySix(false);
     };
 
+
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'Escape') {
@@ -54,6 +55,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
         };
     }, []);
 
+    
     return (
         <section className="section one">
             <div className="navigation">
