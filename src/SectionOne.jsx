@@ -71,7 +71,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
             >
                 <div className={`overlay-div ${showOverlayOne ? "active" : ""}`}>
                     <div className="overlay-navigation" >
-                        <h1 className="overlay-navigation-text black" >Entrepreneur, Advisor, Angel | Former Founder and VC. </h1>
+                        <h1 className="overlay-navigation-text black" >Entrepreneur, Advisor, Investor </h1>
                         <button className="overlay-close-button" onClick={closeOverlayOne}>
                             <i class="fa-solid fa-x"></i>
                         </button>
@@ -99,7 +99,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                         </button>
                     </div>
                     <div className="seen-in-content" >
-                        <h1 className="overlay-description black" >I've had the privilege of joining industry leaders in discussion, sharing my insights at conferences, on podcasts and in media interviews. Including:</h1>
+                        <h1 className="overlay-description black" >Check out previous interviews, articles and podcasts including:</h1>
                         <div className="seen-in-row" >
                             <div className="about-images" >
                                 <img className="about-image" src="./i2.png" />
@@ -176,19 +176,19 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                     <div className="resource-content" >
                         <h1 className="overlay-description black" >Some of my favourite reads, listens and references</h1>
                         <div className="resource-icons" >
-                                <div className="resource-icon-box" >
+                                <div onClick={() => handleClick('https://airtable.com/appUhWoyZGKiVYCtP/shrkVnBT65doyM3VH/tbl9vgI7DPcZTEv3D')} className="resource-icon-box" >
                                     <i class="fa-solid fa-book"></i>
                                     <h1 className="overlay-small-description black" >Books</h1>
                                 </div>
-                                <div className="resource-icon-box" >
+                                <div onClick={() => handleClick('https://airtable.com/appFNdTZbsjd4Ss8l/shrzoYxNnQ6AkU2gz/tblQTCfybawDbwLpx')} className="resource-icon-box" >
                                     <i class="fa-solid fa-podcast"></i>
                                     <h1 className="overlay-small-description black" >Podcasts</h1>
                                 </div>
-                                <div className="resource-icon-box" >
+                                <div onClick={() => handleClick('#investing')} className="resource-icon-box" >
                                     <i class="fa-solid fa-handshake"></i>
                                     <h1 className="overlay-small-description black" >Fundraising</h1>
                                 </div>
-                                <div className="resource-icon-box" >
+                                <div onClick={() => handleClick('https://airtable.com/appSHx8Fmrzn2iuNd/shr7JWkrrNd8mn1Xt/tblSlsVIOtPXi7lnF')} className="resource-icon-box" >
                                     <i class="fa-solid fa-gears"></i>
                                     <h1 className="overlay-small-description black" >Operating</h1>
                                 </div>
@@ -210,19 +210,21 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                             <i class="fa-solid fa-x"></i>
                         </button>
                     </div>
-                    <div className="contact-content" >
+                    <div className="contact-content" id="investing">
+                    <h1 className="overlay-description black" >Always happy to support when it comes to fundraising, in the meantime see below for some helpful resources.</h1>
+                      
                         <div className="row" >
-                            <div onClick={() => handleClick('https://www.linkedin.com/in/otjstrong/')} className="contact-icon-box" >
-                                <i class="fa-brands fa-linkedin"></i>
-                                <h1 className="overlay-small-description black" >Button</h1>
+                            <div onClick={() => handleClick('https://airtable.com/app3wNbep8xWKHBSr/shr7L61SHYf1kYkxC/tbldr9tjcxieLKBet')} className="contact-icon-box" >
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <h1 className="overlay-small-description black" >Investor List</h1>
                             </div>
-                            <div onClick={() => handleClick('https://twitter.com/_olistrong')}  className="contact-icon-box" >
-                                <i class="fa-brands fa-twitter"></i>
-                                <h1 className="overlay-small-description black" >Button</h1>
+                            <div onClick={() => handleClick('https://airtable.com/appQtoGSjuRZ8VdgA/shrAdCoNWMgN7KHVb/tblhKnDJ1yw5njh10')}  className="contact-icon-box" >
+                                <i class="fa-solid fa-hammer"></i>
+                                <h1 className="overlay-small-description black" >Data Room and Deck</h1>
                             </div>
-                            <div onClick={() => handleClick('mail:oli@ikaika.co.uk')}  className="contact-icon-box" >
-                                <i class="fa-solid fa-envelope"></i>
-                                <h1 className="overlay-small-description black" >Button</h1>
+                            <div onClick={() => handleClick('https://airtable.com/app0dZlrRhHPLaJmL/shrCfGVTBY7iewrCk/tblaGg70js1xt3Yt3')}  className="contact-icon-box" >
+                                <i class="fa-solid fa-megaphone"></i>
+                                <h1 className="overlay-small-description black" >Other Fundraising Tips and Tricks</h1>
                             </div>
                         </div>
                     </div>
