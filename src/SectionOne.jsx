@@ -186,7 +186,7 @@ export const SectionOne = ({ showOverlayOne, setShowOverlayOne, showOverlayTwo, 
                                     <i class="fa-solid fa-podcast"></i>
                                     <h1 className="overlay-small-description black" >Podcasts</h1>
                                 </div>
-                                <div onClick={() => handleClick('#investing')} className="resource-icon-box" >
+                                <div onClick={() => toggleOverlay(setShowOverlayFive)} className="resource-icon-box" >
                                     <i class="fa-solid fa-handshake"></i>
                                     <h1 className="overlay-small-description black" >Fundraising</h1>
                                 </div>
